@@ -105,14 +105,14 @@ router.post('/', (req, res) => {
         return;
       }
   
-      req.session.save(() => {
-        // declare session variables
-        req.session.user_id = dbUserData.id;
-        req.session.username = dbUserData.username;
-        req.session.loggedIn = true;
+    //   req.session.save(() => {
+    //     // declare session variables
+    //     req.session.user_id = dbUserData.id;
+    //     req.session.username = dbUserData.username;
+    //     req.session.loggedIn = true;
   
         res.json({ user: dbUserData, message: 'You are now logged in!' });
-      });
+    //   });
     });
   });
 
@@ -131,8 +131,8 @@ router.post('/', (req, res) => {
 //// PUT /api/users/1
 router.put('/:id', (req, res) => {
     // expects {username: 'midnight', email: 'midnight@gmail.com', password: 'password1234'}
-  
     // if req.body has exact key/value pairs to match the model, you can just use `req.body` instead
+    // pass in req.body instead to only update what's passed through
    User.update(req.body, {
     individualHooks: true,
     where: {
