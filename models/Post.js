@@ -1,0 +1,44 @@
+//imports model class and DataTypes object from Sequelize
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+
+// create our Post model
+class Post extends Model {}
+
+// create fields/columns for Post model
+Post.init(
+    {
+      id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true
+      },
+      title: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      blog_text: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            // this means the blog post must be at least 1 character long
+            len: [1]
+          }
+    },
+      user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'user',
+          key: 'id'
+        }
+      }
+    },
+    {
+      sequelize,
+      freezeTableName: true,
+      underscored: true,
+      modelName: 'post'
+    }
+  );
+  module.exports = Post;
