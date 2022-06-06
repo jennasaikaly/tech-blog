@@ -31,7 +31,10 @@ router.get('/', (req, res) => {
       //(only includes properties needed)of itself and saves the results in a new 'posts' array
       const posts = dbPostData.map(post => post.get({ plain: true }));
       //adds the array to an object and passes the object to the template
-      res.render('homepage', { posts });
+      res.render('homepage', {
+        posts,
+        loggedIn: req.session.loggedIn
+      });
     })
     .catch(err => {
       console.log(err);
