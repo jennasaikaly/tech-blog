@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../../models');
 
-// get all users
+// get all posts
 router.get('/', (req, res) => {
     Post.findAll({
       attributes: [
@@ -79,8 +79,7 @@ router.get('/', (req, res) => {
     Post.create({
       title: req.body.title,
       post_text: req.body.post_text,
-      user_id: req.body.user_id
-      //user_id: req.session.user_id
+      user_id: req.session.user_id
     })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {
