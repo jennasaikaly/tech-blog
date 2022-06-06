@@ -1,0 +1,26 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennasaikaly/tech-blog.git"
+  },
+  "author": "Jenna Saikaly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennasaikaly/tech-blog/issues"
+  },
+  "homepage": "https://github.com/jennasaikaly/tech-blog#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.20.1"
+  }
+}
