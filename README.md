@@ -16,12 +16,12 @@
    
   
   ## Installation
-
-  The user just needs to create an account and once logged in, they can start making posts and commenting on other posts, if they exist.
+  
+  Mo installation is needed.
 
   ## Usage 
-
-  My project is used by techies to create blog posts that others can interact with.
+  
+  The user just needs to create an account and once logged in, they can start making posts and commenting on other posts, if they exist.
 
   ## Link
 
@@ -29,7 +29,9 @@
 
   ## Screenshot
 
-  Yes
+ ![image](https://user-images.githubusercontent.com/99379999/173295221-d2f8da63-eca0-408c-9a10-857cf8860c1c.png)
+ ![image](https://user-images.githubusercontent.com/99379999/173295308-9718c79a-5899-468a-b052-133d58345f92.png)
+
   
   ## Questions
 
