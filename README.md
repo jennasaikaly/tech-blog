@@ -17,7 +17,7 @@
   
   ## Installation
   
-  Mo installation is needed.
+  No installation is needed.
 
   ## Usage 
   
