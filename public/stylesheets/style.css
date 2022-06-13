@@ -1,3 +1,4 @@
+/* THIS IS THE CSS FROM THE MODULE */
 * {
   box-sizing: border-box;
 }
@@ -133,15 +134,6 @@ main {
   margin: -1.5% 0 2% 0;
 }
 
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
-}
-
 .comment-form {
   margin-bottom: 5%;
 }
@@ -152,7 +144,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #e8e4df;
 }
 
 .comment .meta {
@@ -170,7 +162,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb(208, 192, 192);
   display: flex;
   justify-content: center;
   padding: 1%;
